@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b8b7b7;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-container button {
+    margin: 0 5px;
+  }
+  
+
+
+  .left-observer {
+    font-size: 30px; /* Change this value to your desired font size */
+  }
+
+  .right-observer{
+    font-size: 30px;
+  }
+  #matrix-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 5px;
+    align-items: center;
+  }
+  
+  .box {
+    width: 25px;
+    height: 20px;
+    background-color: rgb(37, 2, 190);
+    /* background-color: gray; */
+    /* margin: 1px 1px ; */
+  }
+
+  .wall-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .box-count-label {
+    margin-top: 5px;
+    align-self: center;
+  }
+
+.main-item{
+  height: 500px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-container-item {
+    margin: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-container button {
+    margin: 0 5px; 
+  }
+
+#main-grid {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.colored {
+  background-color: lightblue;
+}
+
+.upspace {
+  margin-top: 5px;
+}
+
+.observer {
+  position: relative;
+  width: 100px;
+  height: 200px;
+}
+
+.head {
+    width: 30px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 19px;
+    left: 28px;
+  }
+
+
+
+
+.body {
+    width: 36px;
+    height: 80px;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+  }
+
+.arm, .leg {
+  width: 2px;
+  height: 50px;
+  background-color: #333;
+  position: absolute;
+}
+
+.arm.left {
+    top: 43px;
+    left: 10px;
+    transform: rotate(45deg);
+  }
+
+
+
+.arm.right {
+    top: 45px;
+    right: 21px;
+    transform: rotate(-45deg);
+  }
+
+
+.leg.left {
+    top: 128px;
+    left: 25px;
+  }
+
+.leg.right {
+    top: 130px;
+    right: 39px;
+  }

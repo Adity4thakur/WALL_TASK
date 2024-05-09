@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WALL TASK</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="input-container">
+            <h1>Check The Visible Wall</h1>
+            <div>
+              <div class="input-container-item">
+                <Label>Input No Of Walls</Label>
+                <input type="number" id="no-of-walls"  placeholder="input number of walls to create">
+              </div>
+              <div class="input-container-item">
+                <Label>Input height of  Walls</Label>
+                <input type="text" id="height-of-walls" placeholder="1#2#4#4#5#6" inputmode="numeric">
+              </div>
+              <div class="button-container input-container-item">
+                <button id="create-wall-button">Create Wall</button>
+                <button id="reset-button">Reset</button>
+                <button id="visible-button">Calculate Visible Walls</button>
+              </div>
+            </div>
+          </div>
+        <div id="main-grid">
+            <div style="padding-right: 100px;">
+                <Label>Observer-1</Label>
+                <div class="observer">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div> 
+                <p id="left-observer" style="margin: 0px 0px 0px 0px;">Observer-1 can see : <span id="left-observer-value"></span></p>           
+            </div>
+            <div id="matrix-container">
+    
+            </div>
+            <div style="padding-left: 100px;">
+                <Label>Observer-2</Label>
+                <div class="observer">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div>
+                <p id="right-observer"  style="margin: 0px 0px 0px 0px;">Observer-2 can see : <span id="right-observer-value"></span></p>           
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
